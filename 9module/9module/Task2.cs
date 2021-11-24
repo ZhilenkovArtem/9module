@@ -28,7 +28,7 @@ namespace _9module
                 {
                     Console.WriteLine("Вы ввели не число");
                 }
-                catch (ArgumentException)
+                catch (Not1and2Exception)
                 {
                     Console.WriteLine("Число должно быть 1 или 2");
                 }
@@ -66,7 +66,7 @@ namespace _9module
                 surnames.Sort();
                 surnames.Reverse();
             }
-            else throw new ArgumentException();
+            else throw new Not1and2Exception();
 
             OnProcessCompleted(surnames);
         }
@@ -75,4 +75,5 @@ namespace _9module
             ProcessCompleted?.Invoke(surnames);
         }
     }
+    public class Not1and2Exception : Exception { }
 }
