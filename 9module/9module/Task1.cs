@@ -4,7 +4,7 @@ namespace _9module
 {
     class Task1
     {
-        static void Main()
+        /*static void Main()
         {
             Exception[] exceptions = new Exception[]
             {
@@ -27,7 +27,7 @@ namespace _9module
                         Console.WriteLine(ex.GetType());
                 }
             }
-        }
+        }*/
     }
 
     class NewException : Exception
